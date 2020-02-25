@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+.path {
+  stroke-dasharray: 555;
+  stroke-dashoffset: 555;
+  animation: draw 3s linear forwards;
+}
+
+.path:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.path:nth-child(3) {
+  animation-delay: 4s;
+}
+
+</style>
+</head>
+<body>
+<svg class="multipath" version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 200 200" xml:space="preserve">
+  <path class="path" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M 52.160714,90.625002 C 6.9274786,48.914353 84.13161,3.3099932 89.202379,72.482142 102.98588,6.2729064 147.03154,40.696275 143.97297,74.788403 141.36502,103.85771 125.67719,143.72335 92.982142,127.66667 75.371429,115.65596 121.92417,79.177284 129.26786,142.78571"/>
+  <path class="path" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="m 144.3869,64.922619 c 10.64867,-2.342819 21.70297,-1.59267 32.50596,-2.267858"/>
+  <path class="path" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="m 158.75,35.440475 c 0,0 1.75718,20.555385 2.26786,28.726192"/>
+ 
+</svg>
+</body>
+</html>

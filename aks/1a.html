@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.path {
+  stroke-dasharray: 555;
+  stroke-dashoffset: 555;
+  -webkit-animation: draw 3s normal linear forwards;
+  -moz-animation-name: draw 3s normal linear forwards;
+  -o-animation-name: draw 3s normal linear forwards;
+  animation-name: draw 3s normal linear forwards;
+}
+</style>
+</head>
+<body>
+
+<svg class=“heart-icon" version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 200 200" xml:space="preserve">
+
+    <path class="path" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M 13.004441,78.923748 C 20.12629,92.995482 46.068758,90.425766 46.096688,78.916048 46.280037,3.3605264 -37.610345,105.87114 56.207448,142.14923 147.6098,157.5733 128.00188,33.926085 95.089142,54.604678 70.194199,70.245805 93.859632,89.607556 91.686438,89.609543 89.960569,89.611121 78.18797,88.695637 61.888888,89.429552"/>
+
+</svg>
+</body>
+</html>
