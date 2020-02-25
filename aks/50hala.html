@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.path {
+  stroke-dasharray: 555;
+  stroke-dashoffset: 555;
+  -webkit-animation: draw 3s normal linear forwards;
+  -moz-animation-name: draw 3s normal linear forwards;
+  -o-animation-name: draw 3s normal linear forwards;
+  animation-name: draw 3s normal linear forwards;
+}
+.path:nth-child(2) {
+  animation-delay: 2s;
+}
+</style>
+</head>
+<body>
+
+<svg class=“heart-icon" version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 200 200" xml:space="preserve">
+
+    <path class="path" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d= "m 61.471991,106.7041 c 27.85474,6.0793 28.074806,-34.303427 6.949007,-27.261495 -20.34147,6.780489 -13.637731,25.977355 7.062891,37.063215 9.390746,5.02905 22.086505,9.23797 35.700231,8.3726 0,0 17.68343,-3.41956 22.75499,-6.17586 15.3979,-8.36846 17.00024,-24.374037 9.31403,-31.7505 C 132.97712,77.090147 108.20313,76.759389 97.820644,74.097214 118.28993,79.840102 128.93369,65.721001 143.791,55.388348"/>
+    <path class="path" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="m 95.14795,123.27479 c -28.354941,29.95816 51.50387,25.12335 16.03617,1.60363"/>
+</svg>
+</body>
+</html>
